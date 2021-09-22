@@ -1,0 +1,353 @@
+/*generico de pagina*/
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+/*|*******************|*/
+/*|  Reglas celular   |*/
+/*|*******************|*/
+@media (max-width: 679px) {
+  div.article .description {
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+  .right-navbar {
+    display: none;
+  }
+  .left-navbar {
+    display: none;
+  }
+  section article div.article img {
+    width: 80%;
+  }
+
+  .headerSon {
+    display: flex;
+  }
+  .logo {
+    flex-grow: 0.5;
+    padding: 1px;
+  }
+}
+
+body {
+  background-color: #ebebeb;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+}
+header {
+  background-color: #eac926;
+  width: 100%;
+}
+
+section .baner img {
+  width: 100%;
+}
+main {
+  background-color: #ebebeb;
+  width: 100%;
+}
+footer {
+  background-color: white;
+  text-align: center;
+}
+
+section article div.article {
+  padding: 10px;
+  background-color: white;
+  padding-bottom: 0%;
+  margin-top: 10px;
+}
+section article div.article img {
+  width: 80%;
+}
+
+main section article {
+  padding: 25px;
+  background-color: #ebebeb;
+}
+.tit-header {
+  text-align: center;
+  padding: 5px;
+}
+
+section article p.descuento {
+  color: #39b54a;
+}
+section article div.article i {
+  color: #39b54a;
+  padding: 9px 7px 9px 7px;
+  border: solid 1px #39b54a;
+  border-radius: 100%;
+  position: relative;
+  left: 90%;
+}
+
+.box-1 {
+  border-top: 1px solid;
+  padding: 15px;
+}
+
+div.burger-menu i {
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+}
+.burger-menu {
+  text-align: center;
+  padding: 4%;
+}
+.pie-pagina {
+  padding: 4%;
+  display: flex;
+  width: 100%;
+}
+
+p {
+  font-size: 12px;
+}
+.title {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 30px;
+}
+.precio {
+  font-size: 18px;
+}
+.descuento {
+  font-size: 16px;
+}
+
+.description {
+  font-size: 16px;
+}
+.titulo-pie {
+  font-size: 20px;
+}
+.icono-pie {
+  color: blue;
+  font-size: 2em;
+  float: inline-start;
+}
+.search {
+  align-self: flex-start;
+  display: flex;
+  padding: 3%;
+}
+
+.left-navbar {
+  padding: 2%;
+  padding-bottom: 1%;
+}
+.right-navbar {
+  padding: 2%;
+}
+.abajo p {
+  text-align: center;
+}
+.abajo {
+  width: 40%;
+}
+footer p {
+  text-align: left;
+}
+
+.searchIn {
+  display: flex;
+  font-size: 12px;
+  color: #666;
+}
+
+.main-navar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main-navar a {
+  text-decoration: none;
+  color: #222;
+  font-size: 17px;
+}
+.logo img {
+  width: 150px;
+}
+form .opciones {
+  display: flex;
+  flex-direction: column;
+}
+form button {
+  padding: 10px 9px;
+  color: white;
+  background-color: grey;
+  border: none;
+  margin: 3px;
+}
+form .texto {
+  width: 70%;
+  padding: 8px;
+  font-size: 18px;
+}
+form {
+  font-size: 18px;
+}
+form .botones-formulario {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+form .contenedor {
+  display: flex;
+  flex-direction: column;
+}
+
+.lupa {
+  border-radius: 24px;
+  margin: 0px;
+}
+.formulario div {
+  padding: 9px;
+}
+/*|*******************|*/
+/*|      tablet       |*/
+/*|*******************|*/
+@media (min-width: 680px) {
+  div.article .description {
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+  form .botones-formulario {
+    width: 30%;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+  section article div.article {
+    background-color: white;
+    padding-bottom: 0%;
+    margin-top: 10px;
+    width: 99%;
+  }
+  section article div.article img {
+    width: 99%;
+  }
+  .product {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+
+  .headerPadre {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .headerSon {
+    display: flex;
+    max-width: 350px;
+    justify-content: space-between;
+  }
+
+  .main-navar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-navar ul {
+    display: flex;
+  }
+  .main-navar li {
+    padding: 6px;
+    margin: 0 5;
+  }
+  .tit-header p {
+    font-size: 130%;
+    text-align: right;
+  }
+  .tit-header {
+    max-width: 320;
+    padding-left: 30%;
+  }
+
+  .buscar input {
+    font-size: 10px;
+  }
+  .search {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+  }
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main section article {
+    width: 50%;
+  }
+}
+
+/*|*******************|*/
+/*|      desktop      |*/
+/*|*******************|*/
+@media (min-width: 1200px) {
+  .article {
+    transition: all 900ms;
+  }
+  .article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .article .description {
+    transition: all 900ms;
+  }
+  .article:hover .description {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    color: black;
+  }
+  .search {
+    justify-content: center;
+  }
+  form .botones-formulario {
+    width: 25%;
+  }
+  .burger-menu {
+    display: none;
+  }
+  section article div.article {
+    background-color: white;
+    padding-bottom: 0%;
+    width: 105%;
+    height: 100%;
+  }
+  section article div.article img {
+    width: 80%;
+  }
+  .product {
+    width: 100%;
+  }
+  .main-navar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-navar ul {
+    display: flex;
+  }
+  .main-navar li {
+    padding: 6px;
+    margin: 0 5;
+  }
+  main section article {
+    width: 25%;
+  }
+  footer section .pie-pagina {
+    display: flex;
+  }
+}
